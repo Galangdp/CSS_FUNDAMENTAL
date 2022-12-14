@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: #08c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-fluid{
+        width: 100vw;
+        height: 100vh;
+        background-color: #08c;
+    }
+
+    .item{
+        width: 200px;
+        height: 50px;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .wrap{
+        width: 80%;
+        height: 500px;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .block{
+        width: 300px;
+        height: 100px;
+        background: #7e7e7e;
+        margin: 10px;
+    }
+
+    .area{
+        width: 30%;
+        height: 200px;
+        margin: 10px;
+        border: 1px #7e7e7e solid;
+        display: flex;
+    }
+
+    .brand{
+        width: 200px;
+        height: 100px;
+        background: #f00;
+    }
+
+    .search{
+        width: 200px;
+        height: 100px;
+        background: #ff0; 
+    }
+
+    .login{
+        width: 200px;
+        height: 100px;
+        background: #ff0; 
+    }
+
+</style>
+
+<body>
+    <!-- 
+        Flexbox VS Grid
+     -->
+
+     <!-- Flex Box atau Flex -->
+
+     <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+     </div>
+
+     <!-- 
+        Flex Direction:
+        1. row (Default) : Item akan tampil horizontal kiri ke kanan
+        2. row-reverse : Item akan tampil horizontal kanan kiri
+        3. column : Item akan tampil horizontal atas ke bawah
+        4. column-reverse : Item akan tampil vertical dari bawah ke atas
+      -->
+
+      <!-- wraping -->
+      <!-- flex wrap :
+        Secara default dia akan membuat sebuah row dan meresize ukuran elemen yang ada di dalamnya
+        1. nowrap (default) : semua item akan di tata secara 1 baris dan akan mengubah ukuran asli dari item
+        2. wrap : memindahkan ke baris selanjutnya, dan ukuran akan tetap
+        3. wrap-reverse : memindahkan ke baris selanjutnya, dan ukuran akan tetap-->
+
+      <div class="container">
+        <div class="wrap">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+      </div>
+
+      <!-- Alignment -->
+      <!-- 
+        1. justify-content 
+            memindahkan elemen secara horizontal
+        2. align-items
+            memindahkan elemen secara vertikal
+
+
+        justify-content : 
+            - start(default) : semua element mulai dari kiri
+            - center : semua elemnt akan pindah ke tengah horizontal
+            - end : semua element akan pindah ke kanan horizontal
+
+        align-item :
+            - start(default) : semua element mulai dari atas
+            - center : semua element akan pindah ke tengah vertical
+            - end : semua element akan pindah ke bawah vertical
+       -->
+
+      <div class="container-fluid">
+        <div class="area"></div>
+        <div class="area"></div>
+        <div class="area"></div>
+      </div>
+
+      <div class="container">
+        <div class="area">
+            <div class="brand"></div>
+            <div class="search"></div>
+            <div class="login"></div>
+        </div>
+      </div>
+
+</body>
+</html>

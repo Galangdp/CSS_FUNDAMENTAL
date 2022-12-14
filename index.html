@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    /* MOSTLY 
+        1. background-color (HSL, RGB, HEX)
+        2. background-image
+        3. Backrgound-repeat (repeat-y, repeat-x, no-repeat)
+        4. backgorund-attachment
+        5. backgorund-postion (left, right, center)
+     */
+     
+     .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+     }
+
+    #btn_google{
+        /* biar gaada underline */
+        text-decoration: none;
+        /* untuk mengubah warna fontnya */
+        color: aquamarine;
+    }
+
+    #btn_yt{
+        text-decoration: none;
+        color: white;
+        background: red;
+        padding: 20px 30px;
+        font-weight: bold;
+        border-radius: 30px;
+        box-shadow: #030303;
+    }
+
+    #btn_yt:hover{
+        background-color: #c80000;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 50px;
+        background: #4e58e7;
+        display: flex;
+        /* display: inline; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        list-style: none;
+        margin: 20px;
+    }
+
+    li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .brand h4{
+        font-weight: bold;
+        color: white;
+    }
+
+    .btn-daftar{
+        text-decoration: none;
+        color: white;
+        background: #27b896;
+        padding: 10px 30px;
+        font-weight: bold;
+        border-radius: 30px;
+        box-shadow: #030303;
+    }
+
+</style>
+
+<body>
+    
+    <!-- <a href="" id="btn_google" target="_blank"> GOOGLE</a> -->
+    <!-- target = target nya apa -->
+    <!-- _blanck = membuat tab baru tanpa mengubah tab lama -->
+
+    <div class="container">
+        <!-- <a href="https://www.youtube.com" id="btn_yt" target="_blank"><i class="fa fa-youtube-play">SUBREK</i></a> -->
+
+        <div class="navbar">
+            <div class="brand">
+                <h4>W/OUT G</h4>
+            </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
+            </ul>
+            <div class="daftar">
+                <a class="btn-daftar">Daftar</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
